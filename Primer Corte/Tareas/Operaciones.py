@@ -1,51 +1,39 @@
 class Calculator:
-
     def __init__(self):
-        pass
+        pass  # Constructor vacío
 
-    def add(self, a, b):
+    def add(self, a, b):  # Retorna la suma de a y b
         return a + b
 
-    def substract(self, a, b):
+    def subtract(self, a, b):  # Retorna la resta de a menos b
         return a - b
 
-    def multiply(self, a, b):
+    def multiply(self, a, b):  # Retorna el producto de a por b
         return a * b
 
-    def divide(self, a, b):
-        if b == 0:
-            print("No se puede dividir entre cero.")
-            return float('nan')
-        return a / b
+    def divide(self, a, b):  # Retorna la división de a entre b o un mensaje de error
+        try:
+            return a / b
+        except ZeroDivisionError:
+            return "Matemáticamente incorrecto"
 
-    def modulo(self, a, b):
-        if b == 0:
-            print("No se puede obtener módulo con divisor cero.")
-            return 0
-        return a % b
+    def modulo(self, a, b):  # Retorna el módulo de a entre b o un mensaje de error
+        try:
+            return a % b
+        except ZeroDivisionError:
+            return "Matemáticamente incorrecto"
 
 def main():
-    my_calculator = Calculator()
+    my_calculator = Calculator() #sirve para crear una instancia (objeto) de la clase Calculator
 
-    # Definimos a y b al inicio
     a = 10
-    b = 2
+    b = 0  # Cambia este valor para probar sin error
 
     print("Suma:", my_calculator.add(a, b))
-    print("Resta:", my_calculator.substract(a, b))
+    print("Resta:", my_calculator.subtract(a, b))
     print("Multiplicación:", my_calculator.multiply(a, b))
-
-    resultado_division = my_calculator.divide(a, b)
-    if str(resultado_division) == 'nan':
-        print("Resultado: matemáticamente incorrecto")
-    else:
-        print("División:", resultado_division)
-
-    resultado_modulo = my_calculator.modulo(a, b)
-    if b == 0:
-        print("Resultado: matemáticamente incorrecto")
-    else:
-        print("Módulo:", resultado_modulo)
+    print("División:", my_calculator.divide(a, b))
+    print("Módulo:", my_calculator.modulo(a, b))
 
 if __name__ == "__main__":
     main()
