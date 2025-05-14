@@ -1,3 +1,4 @@
+#Aplicativo para ejecutar la calculadora
 from Calculator import Calculator  
 
 class CalculatorApp:
