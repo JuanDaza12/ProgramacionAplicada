@@ -1,0 +1,1 @@
+En esta carpeta se encuentra un vídeo demostrativo del inicio del proyecto "RunRun" que tiene el puntaje de 3 unidades en el parcial de primer corte de la materia programación aplicada en el semestre 2025-I
