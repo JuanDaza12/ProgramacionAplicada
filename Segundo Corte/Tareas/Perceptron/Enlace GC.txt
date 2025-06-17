@@ -1,0 +1,2 @@
+Enlace de Google Colab para tarea Perceptron
+https://colab.research.google.com/drive/1mVuiasihzEwV65wqVX2D2V_lniml5TAg?usp=sharing
