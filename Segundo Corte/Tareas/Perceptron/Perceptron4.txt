@@ -1,0 +1,3 @@
+Aquí se encuentra el link para el punto del perceptron 4 del parcial de segundo corte
+
+https://colab.research.google.com/drive/1dQoAcS3yVvFFqskzPVxFjAl5k_Hh3EGh?usp=sharing
